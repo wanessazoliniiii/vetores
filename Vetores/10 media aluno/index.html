@@ -1,0 +1,25 @@
+<script>
+    let nota = [];
+    let soma = 0;
+    let aprovado = 0;
+    let reprovado = 0;
+    for (let i = 0; i<10; i++) {
+        nota[i] = parseFloat(prompt("digite a " + (i+1) +"° nota:"));
+
+        soma += nota[i];
+    }
+    for (let i=0; i<10; i++) {
+    if (nota[i] >= 6) {
+        aprovado++;
+    } else {
+        reprovado++;
+    }
+}
+
+    let media = soma / 10;
+
+    document.write("nota: "+ nota + "<br>");
+    document.write("a media das notas é: "+ media+ "<br>");
+    document.write("alunos aprovados:" +aprovado+ "<br>");
+    document.write("alunos reprovados:" +reprovado);
+</script>
